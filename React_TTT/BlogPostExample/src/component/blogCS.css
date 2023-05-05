@@ -1,0 +1,17 @@
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .blog .post {
+    flex: 1 1 300px;
+    margin-right: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .blog .post {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+  
