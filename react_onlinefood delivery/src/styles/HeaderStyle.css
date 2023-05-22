@@ -1,0 +1,15 @@
+.navigation-menu {
+    list-style: none;
+    display: flex;
+   
+  }
+  .navigation-menu li {
+    margin: 0px 30px;
+   
+  }
+  .mobile-navigation {
+    list-style: none;
+  }
+  .mobile-navigation li {
+    margin-top: 20px;
+  }
