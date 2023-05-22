@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Order Form</title>
+    <link rel="stylesheet" href="Ordercs.css">
+    <script type="text/javascript" src="billcalculate.js"></script>
+  </head>
+  <body>
+    <h1>Order Form</h1>
+    <!--<form id="formcalculate" onsubmit="validateForm()" onchange="calculateTotal()" oninput="calculateTotal()">-->
+      <form id="formcalculate" >
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" ><br><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" ><br><br>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" ></textarea><br><br>
+
+      <label for="item">Item:</label>
+      <select id="item" name="item" multiple >        
+        <optgroup label="Tiffins">
+          <option value="idli">Idli</option>
+          <option value="dosa">Dosa</option>
+          <option value="vada">Vada</option>
+          <option value="bajji">Bajji</option>
+        </optgroup>
+        <optgroup label="Meals">
+          <option value="fullmeal">Full Meals</option>
+          <option value="minimeal">Mini Meals</option>
+        </optgroup>
+        <optgroup label="Biryanees">
+          <option value="vegbiryani">Veg Biryani</option>
+          <option value="chickenbiryani">Chicken Biryani</option>
+          <option value="muttonbiryani">Mutton Biryani</option>
+        </optgroup>
+        <optgroup label="FastFood">
+          <option value="noodles">Noodels</option>
+          <option value="manchuriya">Manchuriya</option>
+          <option value="friedrice">Fried Rice</option>
+        </optgroup>
+        <optgroup label="Deserts">
+          <option value="icecream">IceCream</option>
+          <option value="cake">Cake</option>
+        </optgroup>       
+      </select><br><br>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" ><br><br>
+      <!--<input type="number" id="quantity" name="quantity" min="1"  oninput="calculateTotal()"><br><br>-->
+      <label for="totalbill">Total Bill:</label>
+      <input type="text" id="bill" name="bill" ><br><br>
+
+      <button onclick="validate_CalBill()">Calculate Bill</button>
+     <!-- <div id="total"></div>-->
+    </form>
+  </body>
+</html>
